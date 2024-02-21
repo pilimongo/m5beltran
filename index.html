@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" oncontextmenu="return false">
+
+<head>
+    <!--- basic page setup and requirements ======================= -->
+    <meta charset="utf-8">
+    <title>Madison Beltran's Portfolio</title>
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Madison">
+    <!-- metas - mobile specific ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Typewriting title animation CSS -->
+        <style>
+            transparent #container {
+                text-align: left;
+                min-height: 105px;
+            }
+        
+            #text {
+          
+                display: inline-block;
+                vertical-align: middle;
+                color: #eeeff2;
+                font-size: 3rem;
+                text-rendering: optimizeLegibility;
+            }
+        
+            #cursor {
+                display: inline-block;
+                vertical-align: middle;
+                width: 5px;
+                height: 5rem;
+                background-color: #eeeff2;
+                -webkit-animation-animation: blink .65s step-end infinite;
+                text-rendering: optimizeLegibility;
+            }
+        
+            @keyframes blink {
+                from,
+                to {
+                    background-color: rgba(255, 255, 255, 0.389);
+                }
+        
+                50% {
+                    background-color: #e4e4e4;
+                }
+            }
+
+            @media only screen and (max-width: 450px) {
+                #text {
+                    font-size: 1.5rem;
+                }
+        
+                #cursor {
+                    height: 1.7rem;
+                }
+            }
+        
+            @media only screen and (max-width: 600px) {
+        
+                #text {
+                    font-size: 1.7rem;
+                }
+        
+                #cursor {
+                    height: 2rem;
+                }
+            }
+        
+            @media only screen and (max-width: 800px) {
+                #text {
+                    font-size: 2rem;
+                }
+        
+                #cursor {
+                    height: 2.5rem;
+                }
+            }
+        </style>
+
+    <!-- JS ================================================== -->
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <!--Scroll Reveal.js-->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+      
+    <!--favicon ================================================== -->
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon">
+            
+</head>
+
+
+
+<body id="top">
+<!-- Header sections ============================ -->
+    <header class="s-header">
+
+      <a class="header-logo" href="#home" title="homepage">Madison Beltran</a>
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+
+                <li class="current"><a class="smoothscroll" href="#home" title="home">
+                        <div class="zoom">Home</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#about" title="about">
+                        <div class="zoom">About</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#experience" title="experience">
+                        <div class="zoom">Experience</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#blog" title="projects">
+                        <div class="zoom">Projects</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#contact" title="contact">
+                        <div class="zoom">Contact</div>
+                    </a></li>
+
+                <!-- <li><a class="smoothscroll" href="#works" title="creative">
+                        <div class="zoom">Extra</div>
+                    </a></li> -->
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header>
+<!-- end s-header -->
+
+
+
+<!-- HOME Section ============================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
+        data-image-src="images/frontpage.mp4" data-natural-width="3000" data-natural-height="2000"
+        data-position-y="top">
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content" data-image-src="images/frontpage.mp4">
+            <div class="row home-content__main">
+
+                <div class="profile-image scroll-reveal-paragraph">
+                    <img src="images/profile-circle-madison.jpg" alt="Profile Pic">
+                </div>
+
+                <div>
+                    <h3>
+                        <p style="color:gray">Welcome.</p>
+                    </h3><br>
+                </div>
+
+                <div id="container" class = "scroll-reveal-paragraph">
+                    <br><p style="color:gainsboro">
+                        <div id="text"></div>
+                        <div id="cursor"></div>
+                    </p>
+                </div><br>
+
+                
+                <div class="home-content__buttons">
+                    <div class = "zoom"> 
+                        <a class="btn btn--stroke scroll-reveal-paragraph" target="_blank" href="/CV_M_Beltran.pdf">CV (As of 10/10)</a> 
+                    </div>
+
+                    <div class="zoom">
+                        <a href="#experience" class="smoothscroll btn btn--stroke  scroll-reveal-paragraph"> Experience</a>
+                    </div>
+                    
+                    <div class="zoom">
+                        <a class="btn btn--stroke scroll-reveal-paragraph" target="_blank" href="">Projects (TBA)</a> 
+                    </div>
+                </div>
+
+
+                <div class="home-content__scroll arrow-bounce">
+                    <a href="#about" class="scroll-link smoothscroll zoom-profile">
+                        <span>Continue</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end HOME-content -->
+
+
+        <ul class="home-social"> <!-- start home-social icons -->
+            <li>
+                <a href="https://www.linkedin.com/in/madisonbeltran1/"><i
+                        class="im im-linkedin zoom" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+
+            <!-- <li>
+                <a href="https://github.com/thedigitalchief"><i class="im im-github zoom"
+                        aria-hidden="true"></i><span>Github</span></a>
+            </li> -->
+
+            <!-- Add CodePen icon link too!-->
+
+            <li>
+                <a href="mailto:m5beltran@ucsd.edu"><i class="im im-mail zoom"
+                        aria-hidden="true"></i><span>Email</span></a>
+            </li>
+        </ul> <!-- end home-social -->
+
+    </section> 
+<!-- end of Home-->
+
+
+<!-- ABOUT ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3 class = "scroll-reveal-title">About</h3>
+                <h1 class = "scroll-reveal-title">Introduction.</h1>
+            </div>
+        </div>
+
+
+        <div class="row narrow about-content">
+            <div class="col-full">
+
+                <p class = "scroll-reveal-paragraph"> I am a fourth year undergraduate student attending the University of California, San Diego. I am graduating Spring 2024 with a B.S. in Environmental Systems. I am an active student researcher at the Scripps Institute of Oceanography in Dr. Katharine Ricke's lab where I study the potential hydrological impact of Marine Cloud Brightening on Coastal Western North America. I am frequently using the Python to utilize a fully-coupled earth systems model to guage potential impact of solar geoengineering in present and future scenarios. </p>
+                
+               
+                    
+                <p class="scroll-reveal-paragraph"> Prior to UC San Diego, I attended community college and transferred from Irvine Valley College (IVC) as a first generation student. As I entered my first years of college at the height of the pandemic, I jumped at the opportunity to do undergraduate research in my second year at IVC. Through a program hosted by Chapman University, I was able to do marine ecology research in the SEACR Lab with Dr. Richelle Tanner. I am currently working on publishing a manuscript for the data collected in Summer 2022.
+                </p>
+
+            
+            </div>
+        </div>
+
+        <!-- SKILLS ICON SECTION in ABOUT tab-->
+        <div class="skill-section">
+
+            <div class="col-full text-center scroll-reveal-title">
+                <h4> Proficient In</h4>
+            </div>
+
+
+            <div class="skills-container">
+                <div class="zoom">
+                    <div class="skill-card scroll-reveal-paragraph">
+                        <img src="icons/rstudio.tiff" class="skill-img" alt="">
+                        <h1 class="skill-name scroll-reveal-paragraph">R-Studio</h1>
+                        <p class="skill-info"> </p>
+                    </div>
+                </div>
+
+                <div class="zoom">
+                    <div class="skill-card scroll-reveal-paragraph">
+                        <img src="icons/icons8-python.svg" class="skill-img" alt="">
+                        <h1 class="skill-name scroll-reveal-paragraph">Python</h1>
+                        <p class="skill-info"> </p>
+                    </div>
+                </div>
+
+                <div class="zoom">
+                    <div class="skill-card scroll-reveal-paragraph">
+                        <img src="icons/icons8-html-5.svg" class="skill-img" alt="">
+                        <h1 class="skill-name scroll-reveal-paragraph">HTML</h1>
+                        <p class="skill-info"> </p>
+                    </div>
+                </div>
+
+               
+
+                
+
+              
+
+            </div>
+        </div>
+
+
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full scroll-reveal-paragraph">
+                <div class="zoom-button">
+                    <a href="/CV_M_Beltran.pdf" class="btn btn--primary full-width" download>My CV</a>
+                </div>
+            </div>
+
+            <div class="col-six tab-full scroll-reveal-paragraph">
+                <div class="zoom-button">
+                    <a href="mailto: m5beltran@ucsd.edu" class="btn btn--primary full-width">Let's Connect</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+<!-- end ABOUT-section -->
+
+
+<!-- WORKEXPERIENCE SECTION (left and right sections)-->
+    <section id="experience" class="s-about-experience target-section">
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3 class = "scroll-reveal-title">Research Experience</h3>
+                <h1 class = "scroll-reveal-title">Timeline of my research experiences.</h1>
+            </div>
+        </div>
+
+
+        <div class = "timeline-wrap"></div>
+            <div class="row about-content-experience about-content--timeline">
+            <div class="col"></div>
+
+            <div class="col-4 tab-full">
+                <div class="timeline">
+
+                    <!-- EXPERIENCE - Farmers & Merchants Bank -->
+                    <div class="timeline__block scroll-reveal-experience">
+                        <div class="timeline__bullet scroll-reveal-paragraph"></div>
+
+                        <div class="timeline__header scroll-reveal-paragraph">
+                            <div class = "scroll-reveal-paragraph"> 
+                                <p class="timeline__timeframe">June 2023-Present</p>
+                                <h3 class>Scripps Institute of Oceanography Undergraduate Resaearcher</h3>
+                                <h5 href="http://www.fmb.com" target="_blank">California Alliance for Minority Participation (CAMP)</h5>
+                            </div>
+                        </div>
+
+                        <div class="timeline__desc scroll-reveal-paragraph">
+                            <p>◦ Title: Marine Cloud Brightening and its Impact on the Hydrological Cycle in Coastal Western North America 
+                                <br>◦ Principal Investigator: Katharine Ricke, Ph.D., Mentor: Jessica Wan, Ph.D. Candidate 
+                                <br>◦ Developed drought related research questions mapped climate variable output using Community Earth Systems Model 2 (CESM 2) 
+                                <br>◦ Calculated drought variables and observed the impact on drought from the deployment of Marine Cloud Brightening (MCB) in present day 2010 and 2050 conditions using RCP scenarios as framing for the model
+                                <br>◦ Python packages used: NumPy, SciPy, xarray, pandas, geopandas, matplotlib, seaborn, cartopy
+                            </p>
+                        </div>
+                    </div> <!-- FMB Work -->
+
+                    <br>
+                    <br>
+
+
+                    <!-- EXPERIENCE - POSTMATES -->
+                    <div class="timeline">
+                        <div class="timeline__block scroll-reveal-experience">
+                            <div class="timeline__bullet scroll-reveal-paragraph"></div>
+
+                            <div class="timeline__header scroll-reveal-paragraph">
+                                <div class="scroll-reveal-paragraph">
+                                    <p class="timeline__timeframe">June 2022-Present</p>
+                                    <h3>Student Undergraduate Research Fellow for Earth and Environmental Sciences (SURFEES)</h3>
+                                    <h5>Chapman University</h5>
+                                </div>
+                            </div>
+
+                        <div class="timeline__desc scroll-reveal-paragraph">
+                            <p>◦ Title: : Thermoregulatory Behavior Among Nudibranch Species
+                                <br>◦ Principal Investigator: Richelle Tanner, Ph.D
+                                <br>◦ Collected, compiled, and interpreted behavior and movement data of varying nudibranch species in response to temperature using Microsoft Excel for graph creation in R studio 
+                                <br>◦ Publication in progress as of Oct 2023, projected publish date: March 2024
+                        </div>
+
+                    </div>
+                    <!-- end timeline__block -->
+
+                    <!-- EXPERIENCE - IT TUTOR -->
+                    <br>
+                    <br>
+
+            </div>
+
+        <div class="col"></div>
+
+    </section> 
+<!-- END OF WORK EXPERIENCE -->
+
+<!--======= PROJECTS section ======================================= -->
+    <section id="blog" class="s-blog target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3 class = "xscroll-reveal-title">Projects</h3>
+                <!-- <h1 class = "scroll-reveal-title">Projects I have developed.</h1> -->
+                <p class="lead scroll-reveal-paragraph">Projects I am working on.
+                </p>
+            </div>
+        </div>
+
+        <!-- start of a project article -->
+        <div class="row blog-content">
+            <div class="col-full">
+                <div class="blog-list block-1-2 block-tab-full">
+
+
+
+                <!-- Image Enhancer Upscaler -->
+                <article class="col-block slide-left">
+                    <div class="blog-date">
+                        <a href="">Environmental Systems Senior Internship</a>
+                    </div>
+                
+                    <h2 class="h01 scroll-reveal-paragraph"><a href="" target="_blank">Marine Cloud Brightening and its Regional Impact on Drought Conditions in Coastal Western North America</a>
+                    </h2>
+                    <p class="scroll-reveal-paragraph"><a href=""> The first part of the study looks at local variations in drought variables in Coastal Western North America if Marine Cloud Brightening (MCB) were to be deployed to create a cooling response.  <br></a>
+                        <br>◦ 2010 and 2050 conditions were tested to see how the potential deployment of MCB can influence climate-impacted drought varaibles.
+                        <br>◦ Next we will be testing the same drought variables on a global scale and will be using it as comparison.
+                         </br>
+                    </p>
+            
+                    </div>
+                </article>
+
+                </div> <!-- end project-list -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end projects-content -->
+
+    </section> 
+<!-- end PROJECTS-->
+
+
+
+    <!--STATS NUMBER COUNT animation -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-3 block-tab-1-2 block-mob-full stats">
+
+            <div class="col-block stats__col scroll-reveal-stats">
+                <div class="stats__count">
+                    2024
+                </div>
+                <h4>Graduation</h4>
+            </div>
+
+            <div class="col-block stats__col scroll-reveal-stats">
+                <div class="stats__count">
+                    1
+                </div>
+                <h4>Manuscripts in Progress</h4>
+            </div>
+
+            <!-- <div class="col-block stats__col scroll-reveal-stats">
+                <div class="stats__count">
+                    5
+                </div>
+                <h4>Countries traveled this year</h4>
+            </div> -->
+
+        </div>
+    </section>
+    <!-- end STATS -->
+
+
+    <!--===== CONTACT section ======================== -->
+    <section id="contact" class="s-contact page-hero target-section" data-parallax="scroll"
+        data-image-src="images/contact-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="top">
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class=data-image-src="images/contact-bg.jpg">
+   
+
+            <div class="row narrow section-intro">
+                <div class="col-full">
+                    <h3 class="scroll-reveal-title">Contact</h3>
+                    <h1 class="scroll-reveal-title">Let's connect.</h1>
+
+                    <p class="lead scroll-reveal-paragraph">
+                        <p style="color:gray">If anything interests you, please feel free to contact me!</p>
+                    </p>
+
+                </div>
+            </div>
+
+    
+            <div class="row contact__main">
+
+                <div class="col-eight tab-full contact__form scroll-reveal">
+                    <form name="contactForm" id="contactForm" method="post" action="">
+                        <fieldset>
+
+                            <div class="form-field scroll-reveal">
+                                <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+                                    minlength="2" required="" aria-required="true" class="full-width">
+                            </div>
+                            <div class="form-field scroll-reveal">
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                                    required="" aria-required="true" class="full-width">
+                            </div>
+                            <div class="form-field scroll-reveal">
+                                <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
+                                    class="full-width">
+                            </div>
+                            <div class="form-field scroll-reveal">
+                                <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="8" cols="50"
+                                    required="" aria-required="true" class="full-width"></textarea>
+                            </div>
+
+                            <div class="form-field scroll-reveal-paragraph">
+                                <button class="full-width btn--primary">Submit</button>
+                                <div class="submit-loader">
+                                    <div class="text-loader">Sending...</div>
+                                    <div class="s-loader">
+                                        <div class="bounce1"></div>
+                                        <div class="bounce2"></div>
+                                        <div class="bounce3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                    <!-- contact-warning -->
+                    <div class="message-warning">
+                        Something went wrong. Please try again.
+                    </div>
+
+                    <!-- contact-success -->
+                    <div class="message-success">
+                        Your message was sent, thank you!<br>
+                    </div>
+
+                </div>
+
+
+                <div class="col-four tab-full contact__infos">
+                    <h4 class="h06m scroll-reveal-contact">Twitter</h4>
+                    <li><a href="https://twitter.com/Cbeltran25" target="_blank">
+                        <i class="im im-twitter" aria-hidden="true"></i>
+                    </p>
+
+                    <h4 class="h06 scroll-reveal-contact">Email</h4>
+                    <p> <a href="mailto: ctbeltran13@gmail.com">
+                        <p style="color:gray">m5beltran@ucsd.edu</p> <br>
+                        </a>
+                    </p>
+
+                    <h4 class="h06 scroll-reveal-contact">Location</h4>
+                    <p>
+                        <p style="color:white">La Jolla, CA</p>
+                    </p>
+                </div>
+        </div>
+    </section> <!-- end s-contact -->
+
+    <!-- Creative Works Section =========-->
+    <!-- <section id="works" class="s-works target-section">
+        <div class="row narrow">
+            <div class="col-full">
+               <br>
+                <h3 class="scroll-reveal-title">Extra</h3>
+                <h1 class="lead scroll-reveal-title">
+                    My creative portfolio.
+                </h1>
+                <p class="lead scroll-reveal-paragraph">A digital garden for my memories.
+                </p>
+            </div>
+        </div>
+        <div class="zoom-img scroll-reveal-paragraph">
+         <a class="creative-card" href="creative-gallery.html" title="Creative Portfolio">
+                <img src="images/portfolio/travel/memories-gallery.jpeg" class="creative-img" alt="">
+                <span class="shadow-overlay"></span>
+            </a>
+            <br>
+        </div> -->
+
+    <!-- </section> -->
+
+
+
+    <!-- footer ============= -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+            <!-- <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="" alt="Homepage"></a>
+                </div> -->
+
+                <ul class="footer-social">
+
+                    <li><a href="https://www.linkedin.com/in/madisonbeltran1/" target="_blank">
+                            <i class="im im-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn</span>
+                        </a></li>
+
+                    <!-- <li><a href="https://github.com/thedigitalchief" target="_blank">
+                            <i class="im im-github" aria-hidden="true"></i>
+                            <span>Github</span>
+                        </a></li> -->
+
+                    <!-- <li><a href="#">
+                            <i class="im im-twitter" aria-hidden="true"></i>
+                            <span>Twitter</span>
+                        </a></li> <li><a href="#0">
+                            <i class="im im-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a></li> <li><a href="#0">
+                            <i class="im im-pinterest" aria-hidden="true"></i>
+                            <span>Pinterest</span>
+                        </a></li> -->
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                  
+                    <!-- <span> © 2023. All rights reserved.</span> -->
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div> <!-- end footer-bottom -->
+
+    </footer> 
+<!-- end footer -->
+
+    <!-- photoswipe background animation ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
+                    class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end photoSwipe background -->
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <script>
+        ScrollReveal().reveal('.scroll-reveal', {
+        duration: 950,
+        scale: 1,
+          distance: '15px',
+        easing: 'ease-in',
+        mobile: true,
+        origin: 'top',
+        reset: false,
+        viewFactor: 0.2,
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-experience', {
+        duration: 950,
+        scale: 1,
+        mobile: true,
+        distance: '20px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.2,
+        
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-project', {
+        duration: 900,
+        scale: 1,
+        mobile: true,
+        distance: '15px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.2,
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-title', {
+        duration: 1100,
+        scale: 1,
+        mobile: true,
+        distance: '20px',
+        origin: 'bottom',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.2,
+        
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-paragraph', {
+        duration: 1000,
+        scale: 1,
+        mobile: true,
+        distance: '15px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.2,
+        
+        });
+        
+        
+        ScrollReveal().reveal('.scroll-reveal-pic', {
+        duration: 1000,
+        scale: 1,
+        mobile: true,
+        distance: '12px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.2,
+        
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-contact', {
+        duration: 1300,
+        scale: 1,
+        mobile: true,
+        distance: '15px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.25,
+        });
+        
+        
+        ScrollReveal().reveal('.scroll-reveal-stats', {
+        duration: 1300,
+        scale: 1,
+        mobile: true,
+        distance: '80px',
+        origin: 'bottom',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.3,
+        });
+        
+        ScrollReveal().reveal(".slide-right", {
+        duration: 1300,
+        origin: "top",
+        mobile: true,
+        distance: "5px",
+        easing: "ease-in",
+        reset: false,
+        viewFactor: 0.25,
+        });
+        
+        ScrollReveal().reveal(".slide-left", {
+        duration: 1300,
+        origin: "top",
+        mobile: true,
+        distance: "5px",
+        easing: "ease-in",
+        reset: false,
+        viewFactor: 0.25,
+        });
+        </script>
+
+
+    <script> 
+        var _CONTENT = [
+            "Hi, I'm Madison, an Environmental & Climate Science Undergraduate!", 
+            // "A computer science undergraduate...",
+            // "A full-stack software developer...",
+            // "A cyber-security intern...",
+            // "A machine-learning & AI enthusiast...",
+            // "A driven and colloborative worker..."
+        ];
+
+        // Current sentence being processed
+        var _PART = 0;
+
+        // Character number of the current sentence being processed
+        var _PART_INDEX = 0;
+
+        // Holds the handle returned from setInterval
+        var _INTERVAL_VAL;
+
+        // Element that holds the text
+        var _ELEMENT = document.querySelector("#text");
+
+        // Cursor element
+        var _CURSOR = document.querySelector("#cursor");
+
+        // Implements typing effect
+        function Type() {
+            // Get substring with 1 characater added
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+
+            // If full sentence has been displayed then start to delete the sentence after some time
+            if (text === _CONTENT[_PART]) {
+                // Hide the cursor
+                _CURSOR.style.display = 'none';
+
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Delete, 100);
+                }, 1000);
+            }
+        }
+
+        // Implements deleting effect
+        function Delete() {
+            // Get substring with 1 characater deleted
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+
+            // If sentence has been deleted then start to display the next sentence
+            if (text === '') {
+                clearInterval(_INTERVAL_VAL);
+
+                // If current sentence was last then display the first one, else move to the next
+                if (_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+
+                _PART_INDEX = 0;
+
+                // Start to display the next sentence after some time
+                setTimeout(function () {
+                    _CURSOR.style.display = 'inline-block';
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+
+        // Start the typing effect on load
+        _INTERVAL_VAL = setInterval(Type, 200);
+    </script>
+
+    <!-- JS local-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+<!--  Copyright (©) 2023. Madison Beltran, thedigitalchief, and subsidaries. All rights reserved.-->
